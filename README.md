@@ -2,6 +2,8 @@
 
 Telai is a native macOS terminal for agentic development: a **SwiftUI** app with an embedded **libghostty** terminal and a **vertical-tab sidebar** built around **OpenCode**.
 
+The philosophy of this app is simple: easy tool with few essential features for a human in the loop agentic work.
+
 Each tab is a live terminal session running your AI agent, grouped in the sidebar for easy switching. The app watches the agent's activity — working, waiting for you, done — and surfaces it visually and with local notifications, so you always know where your attention is needed.
 
 Each version is available on the Releases page.
