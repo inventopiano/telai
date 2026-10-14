@@ -2,6 +2,7 @@
 
 <img width="1442" height="1002" alt="telai" src="https://github.com/user-attachments/assets/9c1b4384-e8d1-4338-8294-e037b6949ba3" />
 
+
 Telai is a native macOS terminal for agentic development: a **SwiftUI** app with an embedded **libghostty** terminal and a **vertical-tab sidebar** built around **OpenCode**.
 
 The philosophy of this app is simple: easy tool with few essential features for a human in the loop agentic work.
