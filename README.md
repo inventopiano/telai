@@ -72,3 +72,8 @@ When a session is selected, the window toolbar shows its `folder · branch` and 
 - **SwiftColors** for the color palette
 - **SF Symbols** throughout
 - Persistence centralized under `~/.telai`
+
+## Developed with
+- Deepseek 4.1 Flash
+- GLM 5.3
+- Mimo 2.6 Pro
