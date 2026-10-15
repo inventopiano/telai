@@ -6,7 +6,7 @@
 
 Telai is a native macOS terminal for agentic development: a **SwiftUI** app with an embedded **libghostty** terminal and a **vertical-tab sidebar** built around **OpenCode**.
 
-The philosophy of this app is simple: easy tool with few essential features for a human in the loop agentic work.
+The philosophy of this app is simple: **an easy tool with few essential features for a human in the loop agentic work**.
 
 Each tab is a live terminal session running your AI agent, grouped in the sidebar for easy switching. The app watches the agent's activity — working, waiting for you, done — and surfaces it visually and with local notifications, so you always know where your attention is needed.
 
@@ -19,6 +19,10 @@ In Italian, _telaio_ is a loom. _Telai_ is its plural. A loom does one thing: it
 That is exactly what you do with an AI agent. You hold the intent and the structure; the agent moves back and forth across it, and what emerges — the work — belongs to neither of you alone. Telai is the loom: it doesn't write the fabric, it holds the threads so you can weave.
 
 ## Features
+
+### Compatibility
+
+MacOS 27+
 
 ### Terminal sessions with vertical tabs
 
