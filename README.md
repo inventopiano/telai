@@ -1,9 +1,3 @@
-# Telai
-
-<img width="1442" height="1002" alt="telai" src="https://github.com/user-attachments/assets/9c1b4384-e8d1-4338-8294-e037b6949ba3" />
-
----
-
 Telai is a native macOS terminal for agentic development: a **SwiftUI** app with an embedded **libghostty** terminal and a **vertical-tab sidebar** built around **OpenCode**.
 
 The philosophy of this app is simple: **an easy tool with few essential features for a human in the loop agentic work**.
@@ -48,6 +42,7 @@ MacOS 27+
 - Detects **OpenCode v1 and v2** at first launch and offers to install a bundled **TUI plugin** into your OpenCode config, adapted to the detected version.
 - The plugin reports agent events so the app knows the agent's state even when the terminal still has focus.
 - Sessions with an OpenCode session ID are **restored on relaunch** — quitting and reopening brings you back to the same agent session.
+- Optional **shared background server**: Telai can start a single `opencode serve` in the background and have every session `opencode attach` to it, so providers, MCP servers, and LSP run once for all sessions instead of once per tab. Configure it in **Settings → Agents → Opencode → Server** (enable, port, password, idle timeout); an idle timeout shuts the server down when unused to save power. Server setting changes take effect at the next app restart.
 
 ### Agent state, always visible
 
@@ -68,9 +63,10 @@ When a session is selected, the window toolbar shows its `folder · branch` and 
 
 ### Settings
 
-- A dedicated settings window with **App (General / Sidebar), Terminal, and Agents** sections.
+- A dedicated settings window with **App (General / Sidebar), Terminal, Agents, and Restore** sections.
+- The **Agents** page groups everything OpenCode under an **Opencode** header: the TUI plugin install and the **background server** (enable, port, password, idle timeout).
 - Settings live in a commented **JSONC** file (`~/.telai/settings/`) with a matching **JSON schema** for editor validation; changes to the file are picked up live.
-- Configurable: appearance, window size, sidebar width, terminal font family / size / weight, and the default editor.
+- Configurable: appearance, window size, sidebar width, terminal font family / size / weight, the default editor, and the OpenCode background server.
 - Reset to defaults, Cancel, and Save in the footer.
 
 ## Built with
@@ -82,6 +78,7 @@ When a session is selected, the window toolbar shows its `folder · branch` and 
 - Persistence centralized under `~/.telai`
 
 ## Developed with
+
 - Deepseek 4.1 Flash
 - GLM 5.3
 - Mimo 2.6 Pro
